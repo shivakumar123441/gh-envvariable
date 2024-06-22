@@ -5,7 +5,7 @@ const dbUser = process.env.MONGODB_USERNAME;
 const dbPassword = process.env.MONGODB_PASSWORD;
 const dbName = process.env.MONGODB_DB_NAME;
 
-const uri = `mongodb+srv://${dbUser}:${dbPassword}@${clusterAddress}/?retryWrites=true&w=majority&appName=Cluster0`;
+const uri = `jdbc:mongodb://atlas-sql-66768d54b724cb4477964cd4-uv9dq.a.query.mongodb.net/sample_mflix?ssl=true&authSource=admin`;
 const client = new MongoClient(uri);
 
 console.log('Trying to connect to db');
